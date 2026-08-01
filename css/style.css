@@ -46,12 +46,6 @@ body{
 
     z-index:9999;
 
-}
-
-.logo img{
-
-    height:58px;
-    display:block;
 
 }
 
@@ -151,23 +145,7 @@ body{
 
 }
 
-.join{
 
-    background:#d62828;
-
-    color:#fff;
-
-    text-decoration:none;
-
-    padding:14px 28px;
-
-    border-radius:40px;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
 
 .join:hover{
 
