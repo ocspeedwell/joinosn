@@ -204,17 +204,14 @@ Learn More
     </div>
 </section>
 
-    <script>
+<script>
 
-const menu=document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-const nav=document.querySelector(".nav-links");
-
-menu.onclick=function(){
-
-nav.classList.toggle("active");
-
-}
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+});
 
 </script>
 </body>
