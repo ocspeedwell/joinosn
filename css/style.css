@@ -591,5 +591,8 @@ max-width:420px;
         font-weight:600;
         text-decoration:none;
     }
+   .about-image{
+        display:none;
+    }
 
 }
