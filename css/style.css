@@ -405,17 +405,19 @@ transform:translateY(0);
     grid-template-columns:repeat(2,1fr);
     gap:15px;
     margin:35px 0;
+ 
 }
 
 .about-features div{
     background:#f5f7fb;
-    padding:15px 20px;
+     padding:20px;
     border-radius:10px;
     font-weight:600;
+ }
 }.about-stats{
     display:flex;
     justify-content:space-between;
-    margin:40px 0;
+    margin:60px 0;
 }
 
 .stat h3{
