@@ -196,11 +196,9 @@ body{
 
 }
 
-.container{
+.hero-container{
 
-    width:90%;
-
-    max-width:1300px;
+    width:min(90%,1200px);
 
     margin:auto;
 
@@ -208,9 +206,9 @@ body{
 
     grid-template-columns:1fr 1fr;
 
-    gap:60px;
-
     align-items:center;
+
+    gap:70px;
 
 }
 
