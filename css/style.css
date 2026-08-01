@@ -444,8 +444,8 @@ transform:translateY(0);
 }
 
 .about-image img{
-    width:100%;
-    max-width:460px;
+    max-width:320px;
+    margin:auto;
 }
 
 /* =========================
