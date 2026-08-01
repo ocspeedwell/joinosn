@@ -381,127 +381,46 @@ transform:translateY(0);
 
 }
 
-
 /* ==========================
    ABOUT SECTION
 ========================== */
 
 .about-section{
-    background:#07192f;
-    color:#fff;
-    padding:120px 8%;
+    background:#ffffff;
+    color:#06132f;
+    padding:100px 8%;
 }
 
 .about-container{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns:1fr 1fr;
     gap:70px;
-}
-
-.about-text{
-    flex:1;
-}
-
-.about-image{
-    flex:1;
-    text-align:center;
-}
-
-.about-image img{
-    width:100%;
-    max-width:520px;
-    display:block;
+    align-items:center;
+    max-width:1200px;
     margin:auto;
 }
 
 .section-tag{
-    display:inline-block;
-    color:#f15b5b;
+    color:#d62828;
     font-weight:700;
     letter-spacing:2px;
-    margin-bottom:15px;
     text-transform:uppercase;
+    display:block;
+    margin-bottom:15px;
 }
 
 .about-text h2{
-    font-size:3rem;
-    margin-bottom:20px;
+    font-size:48px;
     line-height:1.2;
+    margin-bottom:25px;
+    color:#06132f;
 }
 
 .about-text p{
-    font-size:1.1rem;
+    color:#555;
     line-height:1.9;
-    color:#d9d9d9;
     margin-bottom:20px;
-}
-
-.about-features{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
-    margin:35px 0;
-}
-
-.about-features div{
-    background:rgba(255,255,255,.08);
-    padding:15px;
-    border-radius:10px;
-}
-
-.about-stats{
-    display:flex;
-    gap:50px;
-    margin:40px 0;
-}
-
-.stat h3{
-    font-size:2.4rem;
-    color:#f15b5b;
-    margin-bottom:5px;
-}
-
-.stat p{
-    margin:0;
-    color:#ddd;
-}
-
-.btn-primary{
-    display:inline-block;
-    background:#d64045;
-    color:#fff;
-    padding:15px 40px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:700;
-    transition:.3s;
-}
-
-.btn-primary:hover{
-    background:#b42e35;
-}
-
-@media(max-width:900px){
-
-.about-container{
-    flex-direction:column-reverse;
-    text-align:center;
-}
-
-.about-features{
-    grid-template-columns:1fr;
-}
-
-.about-stats{
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
-.about-text h2{
-    font-size:2.3rem;
+    font-size:18px;
 }
 
 
