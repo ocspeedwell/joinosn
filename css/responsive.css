@@ -41,5 +41,61 @@ justify-content:center;
 justify-content:center;
 
 }
+  
+/* ==========================
+   MOBILE NAVIGATION
+========================== */
+
+@media (max-width: 768px){
+
+    .menu-toggle{
+        display:block;
+        font-size:30px;
+        cursor:pointer;
+        z-index:10001;
+    }
+
+    .join{
+        display:none;
+    }
+
+    .nav-links{
+
+        position:absolute;
+        top:100%;
+        left:0;
+
+        width:100%;
+
+        background:#071a52;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:0;
+
+        display:none;
+
+        padding:20px 0;
+
+        box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        width:100%;
+        text-align:center;
+    }
+
+    .nav-links li a{
+        display:block;
+        padding:16px;
+        width:100%;
+    }
 
 }
