@@ -206,11 +206,31 @@ Learn More
 
 <script>
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+const menu = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", function () {
-    navLinks.classList.toggle("active");
+menu.onclick = function(){
+
+    nav.classList.toggle("active");
+
+    if(nav.classList.contains("active")){
+        menu.innerHTML = "✕";
+    }else{
+        menu.innerHTML = "☰";
+    }
+
+};
+
+document.querySelectorAll(".nav-links a").forEach(link=>{
+
+    link.onclick = function(){
+
+        nav.classList.remove("active");
+
+        menu.innerHTML="☰";
+
+    }
+
 });
 
 </script>
