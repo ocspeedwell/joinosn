@@ -177,7 +177,7 @@ body{
 .hero-container{
 
     width:min(90%,1200px);
-
+padding-top:60px;
     margin:auto;
 
     display:grid;
