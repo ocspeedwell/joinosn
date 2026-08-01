@@ -56,13 +56,12 @@ body{
 }
 
 .nav-links{
-
     display:flex;
-
+    align-items:center;
     list-style:none;
-
     gap:35px;
-
+    margin:0;
+    padding:0;
 }
 
 .nav-links a{
