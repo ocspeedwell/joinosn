@@ -467,11 +467,14 @@ gap:40px;
 }
 
 .left{
-
-order:2;
-
+    order:1;
 }
 
+.hero-image{
+    order:2;
+    margin-top:40px;
+}
+   
 .right{
 
 order:1;
