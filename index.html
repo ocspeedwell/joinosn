@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ochoudo Students Network | An Imo that Works for All</title>
-<meta name="description" content="Join the largest student movement in Imo State. Empowering students through leadership, innovation and community service.">
-
+<title>Ochoudo Students Network (OSN) | Join the Largest Student Movement in Imo State</title>
+<meta name="description" content="Join Ochoudo Students Network (OSN), the largest student movement in Imo State connecting students across universities, polytechnics and colleges to build leadership, innovation and an Imo that Works for All.">
 <!-- Open Graph -->
    <meta property="og:type" content="website">
 <meta property="og:url" content="https://joinosn.com.ng/">
 <meta property="og:title" content="Ochoudo Students Network (OSN)">
 <meta property="og:description" content="Join the largest student movement in Imo State.">
 <meta property="og:image" content="https://joinosn.com.ng/images/osn-preview.png">
-    <meta property="og:image:type"content="ímage/png">
+    <meta property="og:image:type" content="image/png">
 <meta property="og:site_name" content="Ochoudo Students Network">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -151,8 +150,9 @@ Learn More
 
 <div class="hero-image">
 
-    <img src="images/martin.png" alt="Ochoudo Martin Agbaso">
-
+    <img src="images/martin.png"
+loading="lazy"
+alt="Ochoudo Martin Agbaso">
 </div>
 
 </div>
@@ -331,6 +331,26 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
 });
 
 </script>
+
+    const search = document.getElementById("chapterSearch");
+
+search.addEventListener("keyup", function(){
+
+    let value = this.value.toLowerCase();
+
+    let cards = document.querySelectorAll(".chapter-card");
+
+    cards.forEach(card=>{
+
+        let text = card.innerText.toLowerCase();
+
+        card.style.display = text.includes(value)
+            ? "block"
+            : "none";
+
+    });
+
+});
 </body>
 
 </html>
