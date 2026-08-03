@@ -646,23 +646,47 @@ margin-bottom:40px;
 
 }
 
-#chapterSearch{
-    box-shadow:0 8px 25px rgba(0,0,0,.08);
-width:100%;
+.chapter-search{
 
-max-width:500px;
+    max-width:650px;
 
-padding:18px;
+    margin:0 auto 50px;
 
-border:1px solid #ddd;
+}
 
-border-radius:50px;
+.search-message{
 
-font-size:17px;
+    display:none;
 
-margin-bottom:50px;
+    margin-top:25px;
 
-outline:none;
+    background:#ffffff;
+
+    border:2px dashed #d62828;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.search-message h3{
+
+    color:#071a52;
+
+    margin-bottom:15px;
+
+}
+
+.search-message p{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+    line-height:1.8;
 
 }
 
