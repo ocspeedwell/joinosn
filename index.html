@@ -348,27 +348,48 @@ document.querySelectorAll(".nav-links a").forEach(link=>{
     }
 
 });
-    
-    const search = document.getElementById("chapterSearch");
+  const search = document.getElementById("chapterSearch");
+
+const cards = document.querySelectorAll(".chapter-card");
+
+const message = document.getElementById("searchMessage");
 
 search.addEventListener("keyup", function(){
 
     let value = this.value.toLowerCase();
 
-    let cards = document.querySelectorAll(".chapter-card");
+    let found = false;
 
     cards.forEach(card=>{
 
         let text = card.innerText.toLowerCase();
 
-        card.style.display = text.includes(value)
-            ? "block"
-            : "none";
+        if(text.includes(value)){
+
+            card.style.display="block";
+
+            found=true;
+
+        }else{
+
+            card.style.display="none";
+
+        }
 
     });
 
-});
+    if(value==="" || found){
 
+        message.style.display="none";
+
+    }else{
+
+        message.style.display="block";
+
+    }
+
+});  
+    
 </script>
 
 </body>
